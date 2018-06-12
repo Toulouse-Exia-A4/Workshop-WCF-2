@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace eXia_A4_WS_SECUWCF_CLIENT.Properties
+namespace M0_CU.Properties
 {
 
 

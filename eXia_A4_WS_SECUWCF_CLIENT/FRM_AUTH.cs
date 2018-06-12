@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace eXia_A4_WS_SECUWCF_CLIENT
+namespace M0_CU
 {
-    public partial class Form1 : Form
+    public partial class FRM_AUTH : Form
     {
-        public Form1()
+        public FRM_AUTH()
         {
             InitializeComponent();
         }

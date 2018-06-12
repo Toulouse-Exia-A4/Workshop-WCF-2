@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace eXia_A4_WS_SECUWCF_CLIENT
+namespace M0_CU
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace eXia_A4_WS_SECUWCF_CLIENT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FRM_AUTH());
         }
     }
 }

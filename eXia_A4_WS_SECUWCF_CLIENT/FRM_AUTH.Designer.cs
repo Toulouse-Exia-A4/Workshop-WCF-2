@@ -1,6 +1,6 @@
-﻿namespace eXia_A4_WS_SECUWCF_CLIENT
+﻿namespace M0_CU
 {
-    partial class Form1
+    partial class FRM_AUTH
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

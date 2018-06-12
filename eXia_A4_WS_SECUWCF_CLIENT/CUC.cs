@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace M0_SVR
+namespace M2_CUC
 {
-    class Program
+    class CUC
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

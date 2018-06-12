@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace M0_SVR
+namespace M1_CUT
 {
-    class Program
+    class CUT_AUTH
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
