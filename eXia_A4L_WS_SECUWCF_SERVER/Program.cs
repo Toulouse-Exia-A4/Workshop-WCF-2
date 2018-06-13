@@ -28,27 +28,18 @@ namespace M0_SVR
 
     class Program
     {
-        public static WebServiceHost host;
-
         static void Main(string[] args)
         {
-            host = new WebServiceHost(typeof(Service), new Uri("http://localhost:30111/"));
-
-            try
+            //host = new WebServiceHost(typeof(Service));
+            using (ServiceHost host = new ServiceHost(typeof(Service)))
             {
-                ServiceEndpoint ep = host.AddServiceEndpoint(typeof(IService), new WebHttpBinding(), "");
                 host.Open();
                 Console.WriteLine("Press <ENTER> to terminate");
                 Console.ReadLine();
                 host.Close();
             }
-            catch (CommunicationException cex)
-            {
-                Console.WriteLine("An exception occured: {}", cex.Message);
-                host.Abort();
-            }
+            
         }
-
-
+        
     }
 }
