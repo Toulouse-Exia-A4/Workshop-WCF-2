@@ -13,12 +13,16 @@ namespace Middleware
         public bool Authenticate(string username, string password)
         {
             var client = new CADService.CAD_InterfaceClient();
+            client.ClientCredentials.Windows.ClientCredential.UserName = "WindowsCNul";
+            client.ClientCredentials.Windows.ClientCredential.Password = "ouicvrai";
             return client.Authenticate(username, password);
         }
 
         public bool CheckExistence(string username)
         {
             var client = new CADService.CAD_InterfaceClient();
+            client.ClientCredentials.Windows.ClientCredential.UserName = "WindowsCNul";
+            client.ClientCredentials.Windows.ClientCredential.Password = "ouicvrai";
             return client.CheckExistence(username);
         }
     }
