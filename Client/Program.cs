@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using eXia_A4_WS_SECUWCF_CLIENT.ServerService;
+using Client.ServerService;
 
-namespace M0_CU
+namespace Client
 {
-    static class Program
+    class Program
     {
         static void Main(string[] args)
         {
             ServiceClient client = new ServiceClient();
-            bool authenticated = client.Authenticate("simon", "azerty");
+            bool authenticated = client.Authenticate("simon", "aze");
             Console.WriteLine(authenticated);
             Console.ReadLine();
+            
         }
     }
 }
