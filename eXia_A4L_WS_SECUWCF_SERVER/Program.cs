@@ -15,7 +15,6 @@ namespace M0_SVR
     public interface IService
     {
         [OperationContract]
-        [WebInvoke]
         bool Authenticate(string username, string password);
     }
 

@@ -12,7 +12,7 @@ namespace Client
         static void Main(string[] args)
         {
             ServiceClient client = new ServiceClient();
-            bool authenticated = client.Authenticate("simon", "aze");
+            bool authenticated = client.Authenticate("toto", "onesttropfort");
             Console.WriteLine(authenticated);
             Console.ReadLine();
             
