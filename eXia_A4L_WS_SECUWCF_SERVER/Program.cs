@@ -7,6 +7,7 @@ using System.ServiceModel.Web;
 using System.Web.Services.Description;
 using System.ServiceModel;
 using System.ServiceModel.Description;
+using eXia_A4L_WS_SECUWCF_SERVER.MiddlewareService;
 
 namespace M0_SVR
 {
@@ -22,7 +23,13 @@ namespace M0_SVR
     {
         public bool Authenticate(string username, string password)
         {
-            return true;
+            var middlewareService = new AuthenticationServiceClient();
+            middlewareService.ClientCredentials.Windows.ClientCredential.UserName = "middlewareuser";
+            middlewareService.ClientCredentials.Windows.ClientCredential.Password = "password";
+            if (middlewareService.CheckExistence(username))
+                return middlewareService.Authenticate(username, password);
+
+            return false;
         }
     }
 
